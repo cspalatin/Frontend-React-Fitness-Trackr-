@@ -5,7 +5,7 @@ import {
   Save as SaveIcon,
   Delete as DeleteIcon,
 } from "@material-ui/icons";
-import axios from "axios";
+
 import { ROUTINES_ROUTE } from "../constants";
 
 const RoutineRow = ({

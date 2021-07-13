@@ -33,7 +33,6 @@ function App() {
           <Login />
         </Route>
         <Pages authenticated={authenticated} />
-        {/* {!authenticated && <Redirect to={LOGIN_ROUTE} />} */}
       </main>
     </div>
   );

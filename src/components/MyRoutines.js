@@ -117,6 +117,7 @@ const MyRoutines = () => {
               return (
                 <>
                   <RoutineRow
+                    className="Routine-Head"
                     key={routine.id}
                     index={idx}
                     routine={routine}

@@ -20,12 +20,10 @@ const Login = () => {
           window.location.href = `${window.location.origin}${HOME_ROUTE}`;
         } else {
           setErrorMessage("Something went horribly wrong");
-          // show some error message
         }
       })
       .catch(() => {
         setErrorMessage("Something went horribly wrong");
-        // set some error message
       });
   };
 

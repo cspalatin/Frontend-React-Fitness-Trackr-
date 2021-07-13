@@ -1,6 +1,4 @@
 import { Route } from "react-router-dom";
-import Register from "./Register";
-import Login from "./Login";
 import Activites from "./Activities";
 import Routines from "./Routines";
 import MyRoutines from "./MyRoutines";
