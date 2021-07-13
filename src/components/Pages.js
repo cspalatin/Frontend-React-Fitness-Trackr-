@@ -1,25 +1,28 @@
 import { Route } from "react-router-dom";
+import Activites from "./Activities";
+import Routines from "./Routines";
+import MyRoutines from "./MyRoutines";
 import {
+  ACTIVITIES_ROUTE,
   HOME_ROUTE,
   ROUTINES_ROUTE,
   MY_ROUTINES_ROUTE,
-  ACTIVITIES_ROUTE,
 } from "../constants";
 
-const Pages = () => {
+const Pages = ({ authenticated }) => {
   return (
     <>
       <Route path={HOME_ROUTE}>
         <h1>Home Page</h1>
       </Route>
       <Route path={ROUTINES_ROUTE}>
-        <h1>Routines Page</h1>
+        <Routines />
       </Route>
       <Route path={MY_ROUTINES_ROUTE}>
-        <h1>My Routines Page</h1>
+        <MyRoutines />
       </Route>
       <Route path={ACTIVITIES_ROUTE}>
-        <h1>Activities Page</h1>
+        <Activites authenticated={authenticated} />
       </Route>
     </>
   );
